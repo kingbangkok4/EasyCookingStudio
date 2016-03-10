@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+
+	<EditText
+	    android:id="@+id/editRecipeName"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		android:ems="10"
+	    android:gravity="center"
+	    android:hint="Recipe Name"
+		android:layout_below="@+id/ckbLessCarbohydrate"
+		android:layout_alignParentStart="true"
+		android:layout_marginTop="10dp">
+
+	    <requestFocus />
+	</EditText>
+
+	<Button
+	    android:id="@+id/btnNewAddRecipe"
+	    android:layout_width="match_parent"
+	    android:layout_height="60dp"
+		android:background="@drawable/yellow_button"
+	    android:text="Add new recipe"
+	    android:textSize="20dp"
+		android:textStyle="bold"
+		android:layout_below="@+id/editTextCalories"
+		android:layout_alignParentStart="true" />
+
+	<EditText
+		android:id="@+id/editTextCalories"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:gravity="center"
+		android:hint="Calories"
+		android:numeric="decimal"
+		android:layout_below="@+id/editRecipeName"
+		android:layout_alignParentStart="true" />
+
+	<CheckBox
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Normal"
+		android:id="@+id/ckbNormal"
+		android:enabled="false"
+		android:checked="true"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentStart="true" />
+
+	<CheckBox
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Vegetarian"
+		android:id="@+id/ckbVegetarian"
+		android:checked="false"
+		android:layout_alignParentTop="true"
+		android:layout_toEndOf="@+id/ckbLessCarbohydrate"
+		android:layout_marginStart="49dp" />
+
+	<CheckBox
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Less Fat"
+		android:id="@+id/ckbLessFat"
+		android:checked="false"
+		android:layout_below="@+id/ckbNormal"
+		android:layout_alignParentStart="true" />
+
+	<CheckBox
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Less Carbohydrate"
+		android:id="@+id/ckbLessCarbohydrate"
+		android:checked="false"
+		android:layout_below="@+id/ckbLessFat"
+		android:layout_alignParentStart="true" />
+
+	<CheckBox
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Less Sugar"
+		android:id="@+id/ckbLessSugar"
+		android:checked="false"
+		android:layout_alignTop="@+id/ckbLessFat"
+		android:layout_alignStart="@+id/ckbVegetarian" />
+
+	<CheckBox
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Less Salt"
+		android:id="@+id/ckbLessSalt"
+		android:checked="false"
+		android:layout_below="@+id/ckbLessSugar"
+		android:layout_alignStart="@+id/ckbLessSugar" />
+
+</RelativeLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\ANDROIDSTUDIO_PROJECT\EasyCookingStudio\app\src\main\assets"><file name="db_easy_cooking.sqlite" path="D:\ANDROIDSTUDIO_PROJECT\EasyCookingStudio\app\src\main\assets\db_easy_cooking.sqlite"/></source></dataSet><dataSet config="debug"><source path="D:\ANDROIDSTUDIO_PROJECT\EasyCookingStudio\app\src\debug\assets"/></dataSet></merger>
